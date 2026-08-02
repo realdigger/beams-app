@@ -24,11 +24,11 @@ the **BEAMS 2 PRO R-8**, **BEAMS 2 MAX R-10**, **BEAMS 2 PRO F-6**, and
 **BEAMS 2 MAX F-8** and **BEAMS MAX F-8** light models.
 
 When reporting bugs, always state the exact Android device model on which the
-application is running and attach the light's technical information. It can be
-copied from the light's built-in interface by tapping TrueSpectrum at the
-bottom of the page, or from the app's Device section using the Technical
-Information button, if the app can connect to the light.
-When diagnostic-report creation is available, attach that JSON file as well.
+application is running and, first of all, attach the JSON diagnostic report.
+This is the primary way to send light data to the developer. If the app cannot
+connect to the light and create a report, copy its technical information from
+the light's built-in web interface by tapping TrueSpectrum at the bottom of the
+page.
 
 Before testing, it is strongly recommended to save all stored spectra and
 cycles from the light locally to avoid their possible loss.
@@ -107,8 +107,10 @@ application at your own risk.
 - Shows aquarium setup parameters from the controller questionnaire: completion,
   dimensions, type, light count, and placement density.
 - Creates a JSON diagnostic report containing app readings, brief technical
-  information, and responses from known light APIs. The report does not include
-  the IP address or host name.
+  information, responses from known light APIs, and the light's built-in web
+  interface HTML and JavaScript. When needed, the PPFD@25 and DLI values shown
+  by the web interface can be entered manually into the report. The report does
+  not include the IP address or host name.
 - Creates a portable backup of all light spectra, daily cycles, and long
   cycles except built-in protected cycles. Before restoring, the app shows the
   archive source, date, contents, and channel count; it identifies a backup
