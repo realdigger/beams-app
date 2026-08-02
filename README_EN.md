@@ -23,19 +23,34 @@ The application is currently in testing. Its operation has been confirmed with
 the **BEAMS 2 PRO R-8**, **BEAMS 2 MAX R-10**, **BEAMS 2 PRO F-6**, and
 **BEAMS 2 MAX F-8** and **BEAMS MAX F-8** light models.
 
-When reporting bugs, always state the exact Android device model on which the
-application is running and, first of all, attach the JSON diagnostic report.
-This is the primary way to send light data to the developer. If the app cannot
-connect to the light and create a report, copy its technical information from
-the light's built-in web interface by tapping TrueSpectrum at the bottom of the
-page.
-
 Before testing, it is strongly recommended to save all stored spectra and
 cycles from the light locally to avoid their possible loss.
 
 The author accepts no responsibility for possible loss of saved settings,
 spectra, or cycles, or for possible damage to light hardware. You use the
 application at your own risk.
+
+## Diagnostic report
+
+The diagnostic report is the primary way to send the developer information
+about a light problem. To create it:
+
+1. Connect the app to the light.
+2. Open Settings using the gear icon at the top of the screen.
+3. At the bottom of the Application section, tap Create diagnostic report.
+4. When needed, enter the PPFD@25 and DLI values shown in the light's built-in
+   web interface. These fields are optional: leave them empty if the readings
+   are not shown or were not recorded.
+5. Tap Create report, then use the Android system sheet to save or send the
+   JSON file together with a problem description and the Android device model.
+
+The report does not contain the light's IP address or host name. It includes
+app readings, technical information, API responses, and files from the light's
+built-in web interface.
+
+If the app cannot connect to the light and create a report, copy its technical
+information from the light's built-in web interface by tapping TrueSpectrum at
+the bottom of the page, then attach it to the problem description.
 
 ## Screenshots
 
