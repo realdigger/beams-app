@@ -4,12 +4,17 @@ All notable changes to BEAMS App are documented in this file.
 
 [Русская версия](CHANGELOG.md)
 
+## 1.8.0 (build 116)
+
+- Expanded the diagnostic report to better investigate PPFD and DLI
+  discrepancies.
+- Refined PPFD and DLI calculations for the confirmed `BEAMS F 4 v2.0`.
+
 ## 1.7.0 (build 115)
 
 - The diagnostic report now saves the light's built-in web interface HTML and
   JavaScript. PPFD@25 and DLI values shown by the web interface can also be
   added manually.
-
 ## 1.6.0 (build 114)
 
 - Improved light connections and history: a summary API response listing daily

@@ -45,8 +45,8 @@ about a light problem. To create it:
    JSON file together with a problem description and the Android device model.
 
 The report does not contain the light's IP address or host name. It includes
-app readings, technical information, API responses, and files from the light's
-built-in web interface.
+diagnostic data, technical information, and built-in web-interface data needed
+to investigate a problem.
 
 If the app cannot connect to the light and create a report, copy its technical
 information from the light's built-in web interface by tapping TrueSpectrum at
@@ -169,7 +169,7 @@ the bottom of the page, then attach it to the problem description.
 
 The application communicates directly with the light controller through its
 REST API on the local network. No cloud account or external service is
-required for normal operation. The controller's built-in web interface opens
+required for operation. The controller's built-in web interface opens
 in the device browser when requested. Only update checks contact GitHub
 Releases.
 
