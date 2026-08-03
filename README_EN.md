@@ -43,6 +43,8 @@ about a light problem. To create it:
    are not shown or were not recorded.
 5. Tap Create report, then use the Android system sheet to save or send the
    JSON file together with a problem description and the Android device model.
+6. Preferably send two reports with different channel levels—for example, one
+   in automatic mode and one in manual mode.
 
 The report does not contain the light's IP address or host name. It includes
 diagnostic data, technical information, and built-in web-interface data needed
