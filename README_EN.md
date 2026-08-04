@@ -1,7 +1,7 @@
 # BEAMS App
 
 [![Version](https://img.shields.io/github/v/release/realdigger/beams-app?display_name=tag&label=version)](https://github.com/realdigger/beams-app/releases/latest)
-[![APK downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Frealdigger%2Fbeams-app%2Fmain%2Fdownloads.json)](https://github.com/realdigger/beams-app/releases)
+[![Release downloads](https://img.shields.io/github/downloads/realdigger/beams-app/total?label=release%20downloads)](https://github.com/realdigger/beams-app/releases)
 ![Android](https://img.shields.io/badge/Android-5.0%2B-brightgreen?logo=android)
 ![Status](https://img.shields.io/badge/status-testing-orange)
 ![Languages](https://img.shields.io/badge/languages-RU%20%7C%20EN-4fc3f7)
