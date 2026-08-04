@@ -20,8 +20,9 @@ lights.
 ## Testing status and liability
 
 The application is currently in testing. Its operation has been confirmed with
-the **BEAMS 2 PRO R-8**, **BEAMS 2 MAX R-10**, **BEAMS 2 PRO F-6**, and
-**BEAMS 2 MAX F-8** and **BEAMS MAX F-8** light models.
+the **BEAMS F-4 v2.0**, **BEAMS F-6 v2.0**, **BEAMS 2 PRO R-8**,
+**BEAMS 2 MAX R-10**, **BEAMS 2 PRO F-6**, **BEAMS 2 MAX F-8**, and
+**BEAMS MAX F-8** light models.
 
 Before testing, it is strongly recommended to save all stored spectra and
 cycles from the light locally to avoid their possible loss.
