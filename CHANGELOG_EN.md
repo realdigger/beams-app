@@ -4,6 +4,11 @@ All notable changes to BEAMS App are documented in this file.
 
 [Русская версия](CHANGELOG.md)
 
+## 1.8.2 (build 118)
+
+- Corrected PPFD@25 and DLI display for the confirmed `BEAMS R-4 v2.0` and
+  `BEAMS R-6 v2.0` profiles.
+
 ## 1.8.1 (build 117)
 
 - Fixed overstated PPFD and DLI for the confirmed `BEAMS F 4 v2.0` profile.

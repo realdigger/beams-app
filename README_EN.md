@@ -172,9 +172,9 @@ the bottom of the page, then attach it to the problem description.
 
 The application communicates directly with the light controller through its
 REST API on the local network. No cloud account or external service is
-required for operation. The controller's built-in web interface opens
-in the device browser when requested. Only update checks contact GitHub
-Releases.
+required for operation. The controller's built-in web interface opens in the
+device browser from a link in the app when requested. Only update checks
+contact GitHub Releases.
 
 ## License
 
