@@ -3,7 +3,6 @@
 [![Version](https://img.shields.io/github/v/release/realdigger/beams-app?display_name=tag&label=version)](https://github.com/realdigger/beams-app/releases/latest)
 [![Release downloads](https://img.shields.io/github/downloads/realdigger/beams-app/total?label=release%20downloads)](https://github.com/realdigger/beams-app/releases)
 ![Android](https://img.shields.io/badge/Android-5.0%2B-brightgreen?logo=android)
-![Status](https://img.shields.io/badge/status-testing-orange)
 ![Languages](https://img.shields.io/badge/languages-RU%20%7C%20EN-4fc3f7)
 
 BEAMS App is an Android application for local control of BEAMS aquarium
@@ -17,12 +16,7 @@ lights.
 
 [Changelog](CHANGELOG_EN.md)
 
-## Testing status and liability
-
-The application is currently in testing. Its operation has been confirmed with
-the **BEAMS F-4 v2.0**, **BEAMS F-6 v2.0**, **BEAMS 2 PRO R-8**,
-**BEAMS 2 MAX R-10**, **BEAMS 2 PRO F-6**, **BEAMS 2 MAX F-8**, and
-**BEAMS MAX F-8** light models.
+## Liability
 
 Before testing, it is strongly recommended to save all stored spectra and
 cycles from the light locally to avoid their possible loss.
@@ -50,6 +44,10 @@ about a light problem. To create it:
 The report does not contain the light's IP address or host name. It includes
 diagnostic data, technical information, and built-in web-interface data needed
 to investigate a problem.
+
+For an active long cycle, the report also contains its type, controller current
+day, duration, TGI, calculated TGE, and DLI points. This helps compare the
+app's graph and TGE with the light's readings.
 
 If the app cannot connect to the light and create a report, copy its technical
 information from the light's built-in web interface by tapping TrueSpectrum at
@@ -102,14 +100,17 @@ the bottom of the page, then attach it to the problem description.
 
 - Discovers compatible controllers through mDNS and, when necessary, by
   scanning the local Wi-Fi IPv4 range with visible scan progress.
-- Can also find and directly connect to BEAMS light access points. This is an
-  alternative connection method when the light is not on the main local network.
-  Android requires location permission to search for access points.
+- Can also find and directly connect to BEAMS light access points. If an access
+  point has been renamed, it can be selected from the app's full list of
+  available Wi-Fi networks. Android requires location permission to search for
+  access points.
 - Connects directly by IP address, host name, or full controller URL and
-  remembers up to ten recent successful connections. A light can be assigned a
-  custom name bound to its model and controller ID, so it remains available
-  after an IP-address change.
-- Restores the most recent connection at launch.
+  remembers up to ten recent successful connections. Access-point connections
+  save the SSID and reconnect from history by SSID rather than IP address. A
+  light can be assigned a custom name bound to its model and controller ID, so
+  it remains available after an IP-address change.
+- Restores the most recent network connection at launch; saved access points
+  are not connected automatically.
 - Pauses automatic polling when the app is inactive or Wi-Fi is unavailable,
   then fully refreshes controller data after the app or Wi-Fi returns.
 - Opens the controller's native web interface from the dedicated link icon.
@@ -139,13 +140,22 @@ the bottom of the page, then attach it to the problem description.
   technical specification. Separate descriptions below the save and restore
   buttons explain each action.
 - Shows the current daily-cycle graph, DLI, PPFD at 25, 35, and 45 cm, and
-  power consumption. PPFD and channel-contribution calculations account for
-  aquarium dimensions and light configuration from the controller questionnaire.
+  power consumption. On the main screen, compact spectrum and daily-cycle
+  graphs open detailed cards. PPFD and channel-contribution calculations account
+  for aquarium dimensions and light configuration from the controller
+  questionnaire.
+- Shows the active long cycle: adaptive and step cycles use distinct icons and
+  graphs, show calculated TGE, and highlight the current day. The daily-cycle
+  status chip also shows an accent icon when a long cycle is active.
 - Shows a current-spectrum graph calculated from LED spectral data, LED counts
   in channels, and current channel levels.
-- Switches between automatic, manual, and service modes, keeping the selected
-  mode visible while the controller applies its intermediate state changes. In
-  service mode, all channels are set to 20%.
+- Switches between automatic, manual, and configurable service modes, keeping
+  the selected mode visible while the controller applies its intermediate state
+  changes. Each light can have its own mode name and channel levels; its profile
+  is saved by model and controller ID. The settings show coloured sliders,
+  precise manual channel-level input, DLI, PPFD, power, and a compact spectrum
+  graph; the light temporarily enters manual mode and returns to its original
+  mode when settings are closed.
 - Controls individual LED channels and total brightness in manual mode. As in
   the controller's web interface, total brightness equals the highest current
   channel level and changes scale all channels proportionally.
@@ -164,9 +174,13 @@ the bottom of the page, then attach it to the problem description.
   levels can also be saved as a new spectrum or an overwrite of the selected
   one.
 
-## Requirements
+## Requirements and compatibility
 
 - Android 5.0 (API 21) or later.
+- Operation has been confirmed with the **BEAMS F-4 v2.0**,
+  **BEAMS F-6 v2.0**, **BEAMS 2 PRO R-8**, **BEAMS 2 MAX R-10**,
+  **BEAMS 2 PRO F-6**, **BEAMS 2 MAX F-8**, and **BEAMS MAX F-8** light
+  models.
 
 ## Local operation
 

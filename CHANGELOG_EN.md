@@ -4,8 +4,27 @@ All notable changes to BEAMS App are documented in this file.
 
 [Русская версия](CHANGELOG.md)
 
+## Unreleased
+
+- Improved light connections and history: renamed access points can be found
+  in the full Wi-Fi network list, while saved access points reconnect by SSID
+  and are excluded from automatic reconnection.
+- Refreshed the search and connection screen, added compact spectrum and
+  daily-cycle graphs to the main screen, and added a detailed daily-cycle card.
+- Added precise manual channel-level input to service-mode settings.
+- Fixed the lifecycle of the name field when saving a new spectrum.
+- Added accurate display of active adaptive and step cycles: distinct icons,
+  graphs, TGE, and a current-day highlight.
+- Refined adaptive-cycle TGE calculation to use the configuration's initial
+  point instead of the controller's current day.
+- The diagnostic report now includes an active-long-cycle summary.
+
 ## 1.8.2 (build 118)
 
+- Service mode is now configurable: each light saves its mode name and channel
+  levels by model and controller ID. Its settings provide coloured sliders,
+  DLI, PPFD, power, and a compact spectrum graph; the light's original mode is
+  restored when settings are closed.
 - Corrected PPFD@25 and DLI display for the confirmed `BEAMS R-4 v2.0` and
   `BEAMS R-6 v2.0` profiles.
 
