@@ -37,7 +37,7 @@ the bottom of the page, then attach it to the problem description.
 ### Light controls
 
 <p align="center">
-  <img src="docs/screenshots/04-control-manual.jpg" alt="Manual mode" width="220">
+  <img src="docs/screenshots/09-light-rename.jpg" alt="Light rename" width="220">
   <img src="docs/screenshots/05-control-manual-levels.jpg" alt="Manual channel-level control" width="220">
   <img src="docs/screenshots/03-control-auto.jpg" alt="Automatic mode controls" width="220">
 </p>

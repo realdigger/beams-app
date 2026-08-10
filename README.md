@@ -38,7 +38,7 @@ BEAMS App — Android-приложение для локального упра�
 ### Управление светильником
 
 <p align="center">
-  <img src="docs/screenshots/04-control-manual.jpg" alt="Ручной режим" width="220">
+  <img src="docs/screenshots/09-light-rename.jpg" alt="Переименование светильника" width="220">
   <img src="docs/screenshots/05-control-manual-levels.jpg" alt="Ручное управление уровнями каналов" width="220">
   <img src="docs/screenshots/03-control-auto.jpg" alt="Управление в автоматическом режиме" width="220">
 </p>
