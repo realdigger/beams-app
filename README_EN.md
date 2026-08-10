@@ -166,7 +166,7 @@ lights.
 
 ## Diagnostic report
 
-The diagnostic report is the primary way to send the developer information
+The diagnostic report is the primary way to send the app developer information
 about a light problem. To create it:
 
 1. Connect the app to the light.

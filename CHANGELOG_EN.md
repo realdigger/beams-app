@@ -4,6 +4,10 @@ All notable changes to BEAMS App are documented in this file.
 
 [Русская версия](CHANGELOG.md)
 
+## 1.8.6 (build 122)
+
+- Fixed an issue with displaying the app version.
+
 ## 1.8.5 (build 121)
 
 - Improved light connections and history: renamed access points can be found
