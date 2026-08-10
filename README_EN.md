@@ -16,26 +16,6 @@ lights.
 
 [Changelog](CHANGELOG_EN.md)
 
-## Diagnostic report
-
-The diagnostic report is the primary way to send the developer information
-about a light problem. To create it:
-
-1. Connect the app to the light.
-2. Open Settings using the gear icon at the top of the screen.
-3. At the bottom of the Application section, tap Create diagnostic report.
-4. When needed, enter the PPFD@25 and DLI values shown in the light's built-in
-   web interface. These fields are optional: leave them empty if the readings
-   are not shown or were not recorded.
-5. Tap Create report, then use the Android system sheet to save or send the
-   JSON file together with a problem description and the Android device model.
-6. Preferably send two reports with different channel levels—for example, one
-   in automatic mode and one in manual mode.
-
-The report does not contain the light's IP address or host name. It includes
-diagnostic data, technical information, and built-in web-interface data needed
-to investigate a problem.
-
 For an active long cycle, the report also contains its type, controller current
 day, duration, TGI, calculated TGE, and DLI points. This helps compare the
 app's graph and TGE with the light's readings.
@@ -192,6 +172,26 @@ the bottom of the page, then attach it to the problem description.
   levels can also be saved as a new spectrum or an overwrite of the selected
   one.
 
+## Diagnostic report
+
+The diagnostic report is the primary way to send the developer information
+about a light problem. To create it:
+
+1. Connect the app to the light.
+2. Open Settings using the gear icon at the top of the screen.
+3. At the bottom of the Application section, tap Create diagnostic report.
+4. When needed, enter the PPFD@25 and DLI values shown in the light's built-in
+   web interface. These fields are optional: leave them empty if the readings
+   are not shown or were not recorded.
+5. Tap Create report, then use the Android system sheet to save or send the
+   JSON file together with a problem description and the Android device model.
+6. Preferably send two reports with different channel levels—for example, one
+   in automatic mode and one in manual mode.
+
+The report does not contain the light's IP address or host name. It includes
+diagnostic data, technical information, and built-in web-interface data needed
+to investigate a problem.
+
 ## Requirements and compatibility
 
 - Android 5.0 (API 21) or later.
@@ -202,7 +202,7 @@ the bottom of the page, then attach it to the problem description.
 
 ## Liability
 
-Before testing, it is recommended to save all stored spectra and
+Before using the app, it is recommended to save all stored spectra and
 cycles from the light locally to avoid their possible loss.
 
 The author accepts no responsibility for possible loss of saved settings,
