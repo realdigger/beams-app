@@ -52,7 +52,6 @@ BEAMS App — Android-приложение для локального упра�
 <p align="center">
   <img src="docs/screenshots/01-connection-loading.jpg" alt="Загрузка экрана подключения" width="220">
   <img src="docs/screenshots/02-connection-history.jpg" alt="Подключение и история светильников" width="220">
-  <img src="docs/screenshots/27-connection.jpg" alt="Экран подключения" width="220">
   <img src="docs/screenshots/28-access-point-discovery.jpg" alt="Поиск точки доступа светильника" width="220">
 </p>
 

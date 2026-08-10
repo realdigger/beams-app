@@ -51,7 +51,6 @@ the bottom of the page, then attach it to the problem description.
 <p align="center">
   <img src="docs/screenshots/01-connection-loading.jpg" alt="Connection screen loading" width="220">
   <img src="docs/screenshots/02-connection-history.jpg" alt="Light connection and history" width="220">
-  <img src="docs/screenshots/27-connection.jpg" alt="Connection screen" width="220">
   <img src="docs/screenshots/28-access-point-discovery.jpg" alt="Light access-point discovery" width="220">
 </p>
 
