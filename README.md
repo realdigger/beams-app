@@ -16,15 +16,6 @@ BEAMS App — Android-приложение для локального упра�
 
 [Журнал изменений](CHANGELOG.md)
 
-## Ответственность
-
-Перед тестированием крайне рекомендуется локально сохранить из светильника все
-сохранённые спектры и циклы, чтобы избежать их возможной утраты.
-
-Автор не несёт ответственности за возможную утрату сохранённых настроек,
-спектров или циклов, а также за возможные повреждения аппаратной части
-светильников. Вы используете приложение на свой страх и риск.
-
 ## Отчёт для диагностики
 
 Отчёт для диагностики — основной способ передать разработчику сведения о
@@ -56,45 +47,73 @@ BEAMS App — Android-приложение для локального упра�
 
 ## Скриншоты
 
+### Подключение
+
 <p align="center">
-  <img src="docs/screenshots/connection.jpg" alt="Экран подключения" width="220">
-  <img src="docs/screenshots/access-point-discovery.jpg" alt="Поиск точки доступа" width="220">
-  <img src="docs/screenshots/control-auto.jpg" alt="Управление в автоматическом режиме" width="220">
+  <img src="docs/screenshots/01-connection-loading.jpg" alt="Загрузка экрана подключения" width="220">
+  <img src="docs/screenshots/02-connection-history.jpg" alt="Подключение и история светильников" width="220">
+  <img src="docs/screenshots/27-connection.jpg" alt="Экран подключения" width="220">
+  <img src="docs/screenshots/28-access-point-discovery.jpg" alt="Поиск точки доступа светильника" width="220">
+</p>
+
+### Управление светильником
+
+<p align="center">
+  <img src="docs/screenshots/04-control-manual.jpg" alt="Ручной режим" width="220">
+  <img src="docs/screenshots/05-control-manual-levels.jpg" alt="Ручное управление уровнями каналов" width="220">
+  <img src="docs/screenshots/03-control-auto.jpg" alt="Управление в автоматическом режиме" width="220">
+</p>
+
+### Спектры
+
+<p align="center">
+  <img src="docs/screenshots/07-spectrum-applied.jpg" alt="Применённый спектр" width="220">
+  <img src="docs/screenshots/09-light-rename.jpg" alt="Переименование светильника" width="220">
+  <img src="docs/screenshots/13-light-selector.jpg" alt="Выбор светильника" width="220">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/control-service.jpg" alt="Режим обслуживания" width="220">
-  <img src="docs/screenshots/control-manual.jpg" alt="Ручной режим" width="220">
-  <img src="docs/screenshots/spectrum-selection.jpg" alt="Выбор спектра" width="220">
+  <img src="docs/screenshots/06-spectrum-create.jpg" alt="Создание спектра" width="220">
+  <img src="docs/screenshots/08-spectrum-delete-confirmation.jpg" alt="Подтверждение удаления спектра" width="220">
+  <img src="docs/screenshots/10-spectrum-detail.jpg" alt="Подробный график спектра" width="220">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/spectrum-overwrite-confirmation.jpg" alt="Подтверждение перезаписи спектра" width="220">
-  <img src="docs/screenshots/spectrum-applied.jpg" alt="Применённый спектр" width="220">
-  <img src="docs/screenshots/spectrum-delete-confirmation.jpg" alt="Подтверждение удаления спектра" width="220">
+  <img src="docs/screenshots/15-spectra-library.jpg" alt="Сохранённые спектры" width="220">
+  <img src="docs/screenshots/16-spectrum-export.jpg" alt="Экспорт спектра" width="220">
+  <img src="docs/screenshots/17-spectrum-qr-code.jpg" alt="QR-код спектра" width="220">
 </p>
 
-<p align="center">
-  <img src="docs/screenshots/daily-cycle.jpg" alt="График дневного цикла" width="220">
-  <img src="docs/screenshots/device-information.jpg" alt="Информация об устройстве" width="220">
-  <img src="docs/screenshots/channel-details.jpg" alt="Карточка канала" width="220">
-</p>
+### Циклы и каналы
 
 <p align="center">
-  <img src="docs/screenshots/current-spectrum.jpg" alt="График текущего спектра" width="220">
-  <img src="docs/screenshots/aquarium-details.jpg" alt="Параметры аквариума" width="220">
-  <img src="docs/screenshots/settings.jpg" alt="Настройки приложения" width="220">
+  <img src="docs/screenshots/11-daily-cycle-detail.jpg" alt="Подробный график дневного цикла" width="220">
+  <img src="docs/screenshots/14-cycles.jpg" alt="Экран циклов" width="220">
+  <img src="docs/screenshots/12-channel-detail.jpg" alt="Карточка канала" width="220">
 </p>
 
-<p align="center">
-  <img src="docs/screenshots/spectra-library.jpg" alt="Сохранённые спектры" width="220">
-  <img src="docs/screenshots/manual-control-10-channels.jpg" alt="Ручное управление десятью каналами" width="220">
-</p>
+### Устройство и аквариум
 
 <p align="center">
-  <img src="docs/screenshots/backup.jpg" alt="Резервное копирование" width="220">
-  <img src="docs/screenshots/spectrum-import-preview.jpg" alt="Импорт спектра и предпросмотр" width="220">
-  <img src="docs/screenshots/spectrum-qr-share.jpg" alt="QR-код спектра" width="220">
+  <img src="docs/screenshots/18-more-menu.jpg" alt="Меню «Ещё»" width="220">
+  <img src="docs/screenshots/19-device-information.jpg" alt="Информация об устройстве" width="220">
+  <img src="docs/screenshots/20-aquarium-details.jpg" alt="Параметры аквариума" width="220">
+</p>
+
+### Резервные копии и диагностика
+
+<p align="center">
+  <img src="docs/screenshots/21-backup.jpg" alt="Резервное копирование" width="220">
+  <img src="docs/screenshots/22-backup-restore-confirmation.jpg" alt="Проверка восстановления резервной копии" width="220">
+  <img src="docs/screenshots/24-diagnostic-report.jpg" alt="Создание отчёта для диагностики" width="220">
+</p>
+
+### Настройки и режим обслуживания
+
+<p align="center">
+  <img src="docs/screenshots/23-settings.jpg" alt="Настройки приложения" width="220">
+  <img src="docs/screenshots/25-service-mode-settings.jpg" alt="Настройки режима обслуживания" width="220">
+  <img src="docs/screenshots/26-service-mode-channel.jpg" alt="Уровень канала в режиме обслуживания" width="220">
 </p>
 
 ## Возможности
@@ -179,6 +198,15 @@ BEAMS App — Android-приложение для локального упра�
 - Работа приложения подтверждена со светильниками моделей **BEAMS F-4 v2.0**,
   **BEAMS F-6 v2.0**, **BEAMS 2 PRO R-8**, **BEAMS 2 MAX R-10**,
   **BEAMS 2 PRO F-6**, **BEAMS 2 MAX F-8** и **BEAMS MAX F-8**.
+
+## Ответственность
+
+Перед тестированием рекомендуется локально сохранить из светильника все
+сохранённые спектры и циклы, чтобы избежать их возможной утраты.
+
+Автор не несёт ответственности за возможную утрату сохранённых настроек,
+спектров или циклов, а также за возможные повреждения аппаратной части
+светильников. Вы используете приложение на свой страх и риск.
 
 ## Локальная работа
 

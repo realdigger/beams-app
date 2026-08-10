@@ -16,15 +16,6 @@ lights.
 
 [Changelog](CHANGELOG_EN.md)
 
-## Liability
-
-Before testing, it is strongly recommended to save all stored spectra and
-cycles from the light locally to avoid their possible loss.
-
-The author accepts no responsibility for possible loss of saved settings,
-spectra, or cycles, or for possible damage to light hardware. You use the
-application at your own risk.
-
 ## Diagnostic report
 
 The diagnostic report is the primary way to send the developer information
@@ -55,45 +46,73 @@ the bottom of the page, then attach it to the problem description.
 
 ## Screenshots
 
+### Connection
+
 <p align="center">
-  <img src="docs/screenshots/connection.jpg" alt="Connection screen" width="220">
-  <img src="docs/screenshots/access-point-discovery.jpg" alt="Access-point discovery" width="220">
-  <img src="docs/screenshots/control-auto.jpg" alt="Automatic mode controls" width="220">
+  <img src="docs/screenshots/01-connection-loading.jpg" alt="Connection screen loading" width="220">
+  <img src="docs/screenshots/02-connection-history.jpg" alt="Light connection and history" width="220">
+  <img src="docs/screenshots/27-connection.jpg" alt="Connection screen" width="220">
+  <img src="docs/screenshots/28-access-point-discovery.jpg" alt="Light access-point discovery" width="220">
+</p>
+
+### Light controls
+
+<p align="center">
+  <img src="docs/screenshots/04-control-manual.jpg" alt="Manual mode" width="220">
+  <img src="docs/screenshots/05-control-manual-levels.jpg" alt="Manual channel-level control" width="220">
+  <img src="docs/screenshots/03-control-auto.jpg" alt="Automatic mode controls" width="220">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/control-service.jpg" alt="Service mode" width="220">
-  <img src="docs/screenshots/control-manual.jpg" alt="Manual mode" width="220">
-  <img src="docs/screenshots/spectrum-selection.jpg" alt="Spectrum selection" width="220">
+  <img src="docs/screenshots/07-spectrum-applied.jpg" alt="Applied spectrum" width="220">
+  <img src="docs/screenshots/09-light-rename.jpg" alt="Light rename" width="220">
+  <img src="docs/screenshots/13-light-selector.jpg" alt="Light selector" width="220">
+</p>
+
+### Spectra
+
+<p align="center">
+  <img src="docs/screenshots/06-spectrum-create.jpg" alt="Spectrum creation" width="220">
+  <img src="docs/screenshots/08-spectrum-delete-confirmation.jpg" alt="Spectrum deletion confirmation" width="220">
+  <img src="docs/screenshots/10-spectrum-detail.jpg" alt="Detailed spectrum graph" width="220">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/spectrum-overwrite-confirmation.jpg" alt="Spectrum overwrite confirmation" width="220">
-  <img src="docs/screenshots/spectrum-applied.jpg" alt="Applied spectrum" width="220">
-  <img src="docs/screenshots/spectrum-delete-confirmation.jpg" alt="Spectrum deletion confirmation" width="220">
+  <img src="docs/screenshots/15-spectra-library.jpg" alt="Saved spectra" width="220">
+  <img src="docs/screenshots/16-spectrum-export.jpg" alt="Spectrum export" width="220">
+  <img src="docs/screenshots/17-spectrum-qr-code.jpg" alt="Spectrum QR code" width="220">
 </p>
 
-<p align="center">
-  <img src="docs/screenshots/daily-cycle.jpg" alt="Daily-cycle graph" width="220">
-  <img src="docs/screenshots/device-information.jpg" alt="Device information" width="220">
-  <img src="docs/screenshots/channel-details.jpg" alt="Channel detail card" width="220">
-</p>
+### Cycles and channels
 
 <p align="center">
-  <img src="docs/screenshots/current-spectrum.jpg" alt="Current-spectrum graph" width="220">
-  <img src="docs/screenshots/aquarium-details.jpg" alt="Aquarium setup details" width="220">
-  <img src="docs/screenshots/settings.jpg" alt="App settings" width="220">
+  <img src="docs/screenshots/11-daily-cycle-detail.jpg" alt="Detailed daily-cycle graph" width="220">
+  <img src="docs/screenshots/14-cycles.jpg" alt="Cycles screen" width="220">
+  <img src="docs/screenshots/12-channel-detail.jpg" alt="Channel detail card" width="220">
 </p>
 
-<p align="center">
-  <img src="docs/screenshots/spectra-library.jpg" alt="Saved spectra" width="220">
-  <img src="docs/screenshots/manual-control-10-channels.jpg" alt="Ten-channel manual control" width="220">
-</p>
+### Device and aquarium
 
 <p align="center">
-  <img src="docs/screenshots/backup.jpg" alt="Backup" width="220">
-  <img src="docs/screenshots/spectrum-import-preview.jpg" alt="Spectrum import and preview" width="220">
-  <img src="docs/screenshots/spectrum-qr-share.jpg" alt="Spectrum QR code" width="220">
+  <img src="docs/screenshots/18-more-menu.jpg" alt="More menu" width="220">
+  <img src="docs/screenshots/19-device-information.jpg" alt="Device information" width="220">
+  <img src="docs/screenshots/20-aquarium-details.jpg" alt="Aquarium setup details" width="220">
+</p>
+
+### Backups and diagnostics
+
+<p align="center">
+  <img src="docs/screenshots/21-backup.jpg" alt="Backup" width="220">
+  <img src="docs/screenshots/22-backup-restore-confirmation.jpg" alt="Backup restore verification" width="220">
+  <img src="docs/screenshots/24-diagnostic-report.jpg" alt="Diagnostic-report creation" width="220">
+</p>
+
+### Settings and service mode
+
+<p align="center">
+  <img src="docs/screenshots/23-settings.jpg" alt="App settings" width="220">
+  <img src="docs/screenshots/25-service-mode-settings.jpg" alt="Service-mode settings" width="220">
+  <img src="docs/screenshots/26-service-mode-channel.jpg" alt="Service-mode channel level" width="220">
 </p>
 
 ## Features
@@ -181,6 +200,15 @@ the bottom of the page, then attach it to the problem description.
   **BEAMS F-6 v2.0**, **BEAMS 2 PRO R-8**, **BEAMS 2 MAX R-10**,
   **BEAMS 2 PRO F-6**, **BEAMS 2 MAX F-8**, and **BEAMS MAX F-8** light
   models.
+
+## Liability
+
+Before testing, it is recommended to save all stored spectra and
+cycles from the light locally to avoid their possible loss.
+
+The author accepts no responsibility for possible loss of saved settings,
+spectra, or cycles, or for possible damage to light hardware. You use the
+application at your own risk.
 
 ## Local operation
 
