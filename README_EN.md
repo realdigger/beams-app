@@ -16,14 +16,6 @@ lights.
 
 [Changelog](CHANGELOG_EN.md)
 
-For an active long cycle, the report also contains its type, controller current
-day, duration, TGI, calculated TGE, and DLI points. This helps compare the
-app's graph and TGE with the light's readings.
-
-If the app cannot connect to the light and create a report, copy its technical
-information from the light's built-in web interface by tapping TrueSpectrum at
-the bottom of the page, then attach it to the problem description.
-
 ## Screenshots
 
 ### Connection
@@ -191,6 +183,10 @@ about a light problem. To create it:
 The report does not contain the light's IP address or host name. It includes
 diagnostic data, technical information, and built-in web-interface data needed
 to investigate a problem.
+
+If the app cannot connect to the light and create a report, copy its technical
+information from the light's built-in web interface by tapping TrueSpectrum at
+the bottom of the page, then attach it to the problem description.
 
 ## Requirements and compatibility
 
