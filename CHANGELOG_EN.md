@@ -4,6 +4,14 @@ All notable changes to BEAMS App are documented in this file.
 
 [Русская версия](CHANGELOG.md)
 
+## 1.8.7 (build 123)
+
+- Improved backup restoration: progress is shown, and after a failure the operation can be retried with an updated list of light data. The error screen retains the safety backup path.
+- Channel changes in service-mode settings immediately start a preview.
+- The channel-slider layout adapts to screen width and text size.
+- Improved support for different light models.
+- Added a check for light firmware updates.
+
 ## 1.8.6 (build 122)
 
 - Fixed an issue with displaying the app version.
