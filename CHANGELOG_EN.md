@@ -16,7 +16,7 @@ All notable changes to BEAMS App are documented in this file.
 - Refreshed the search and connection screen, added compact spectrum and
   daily-cycle graphs to the main screen, and added a detailed daily-cycle card.
 - Added precise manual channel-level input to service-mode settings.
-- Fixed the lifecycle of the name field when saving a new spectrum.
+- Fixed an error when saving the name of a new spectrum.
 - Added accurate display of active adaptive and step cycles: distinct icons,
   graphs, TGE, and a current-day highlight.
 
@@ -40,13 +40,12 @@ All notable changes to BEAMS App are documented in this file.
 
 ## 1.7.0 (build 115)
 
-- The diagnostic report now saves the light's built-in web interface HTML and
-  JavaScript. PPFD@25 and DLI values shown by the web interface can also be
-  added manually.
+- The diagnostic report now includes data from the light's web interface.
+  PPFD@25 and DLI readings can also be added manually.
 ## 1.6.0 (build 114)
 
-- Improved light connections and history: a summary API response listing daily
-  cycles no longer interrupts loading, and custom names are saved by the
+- Improved light connections and history: fixed a daily-cycle loading error,
+  and custom names are saved by the
   controller model and ID.
 - Backup restore was significantly expanded: it supports long cycles, checks
   the source, contents, model, and channel count before restoring, preserves
@@ -81,8 +80,8 @@ All notable changes to BEAMS App are documented in this file.
 
 - Split the Device tab into “Device and diagnostics” and “Application” blocks;
   added the controller ID and reduced spacing for a more compact layout.
-- Added JSON diagnostic-report creation with app readings, brief technical
-  information, and responses from known light APIs. The report does not include
+- Added diagnostic-report creation with app readings and data for investigating
+  problems. The report does not include
   the IP address or host name.
 
 ## 1.2.0 (build 86)

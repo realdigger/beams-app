@@ -34,13 +34,13 @@ lights.
   <img src="docs/screenshots/03-control-auto.jpg" alt="Automatic mode controls" width="220">
 </p>
 
+### Spectra
+
 <p align="center">
   <img src="docs/screenshots/07-spectrum-applied.jpg" alt="Applied spectrum" width="220">
   <img src="docs/screenshots/09-light-rename.jpg" alt="Light rename" width="220">
   <img src="docs/screenshots/13-light-selector.jpg" alt="Light selector" width="220">
 </p>
-
-### Spectra
 
 <p align="center">
   <img src="docs/screenshots/06-spectrum-create.jpg" alt="Spectrum creation" width="220">
@@ -88,8 +88,8 @@ lights.
 
 ## Features
 
-- Discovers compatible controllers through mDNS and, when necessary, by
-  scanning the local Wi-Fi IPv4 range with visible scan progress.
+- Discovers compatible controllers on the local Wi-Fi network with visible
+  scan progress.
 - Can also find and directly connect to BEAMS light access points. If an access
   point has been renamed, it can be selected from the app's full list of
   available Wi-Fi networks. Android requires location permission to search for
@@ -116,8 +116,8 @@ lights.
 - Shows aquarium setup parameters from the controller questionnaire: completion,
   dimensions, type, light count, and placement density.
 - Creates a JSON diagnostic report containing app readings, brief technical
-  information, responses from known light APIs, and the light's built-in web
-  interface HTML and JavaScript. When needed, the PPFD@25 and DLI values shown
+  information, and data needed to investigate a problem. When needed, the
+  PPFD@25 and DLI values shown
   by the web interface can be entered manually into the report. The report does
   not include the IP address or host name.
 - Creates a portable backup of all light spectra, daily cycles, and long
@@ -125,10 +125,9 @@ lights.
   archive source, date, contents, and channel count; it identifies a backup
   from the same light and blocks restore when the channel counts differ. A
   safety copy of the current settings is created in `Downloads/BEAMS App`
-  before data is deleted. All three object types are restored. The archive
-  manifest contains the controller model and ID, channel configuration, and
-  technical specification. Separate descriptions below the save and restore
-  buttons explain each action.
+  before data is deleted. Restore progress is shown; interrupted restores
+  can be retried using a fresh list of controller data. The error screen retains
+  the path to the safety backup.
 - Shows the current daily-cycle graph, DLI, PPFD at 25, 35, and 45 cm, and
   power consumption. On the main screen, compact spectrum and daily-cycle
   graphs open detailed cards. PPFD and channel-contribution calculations account
@@ -139,21 +138,19 @@ lights.
   status chip also shows an accent icon when a long cycle is active.
 - Shows a current-spectrum graph calculated from LED spectral data, LED counts
   in channels, and current channel levels.
-- Switches between automatic, manual, and configurable service modes, keeping
-  the selected mode visible while the controller applies its intermediate state
-  changes. Each light can have its own mode name and channel levels; its profile
+- Switches between automatic, manual, and configurable service modes. Each
+  light can have its own mode name and channel levels; its profile
   is saved by model and controller ID. The settings show coloured sliders,
-  precise manual channel-level input, DLI, PPFD, power, and a compact spectrum
-  graph; the light temporarily enters manual mode and returns to its original
-  mode when settings are closed.
+  precise manual channel-level input, PPFD, power, and a compact spectrum
+  graph. PPFD and power are calculated for the profile being edited. Channel
+  changes immediately preview in manual mode.
 - Controls individual LED channels and total brightness in manual mode. As in
   the controller's web interface, total brightness equals the highest current
-  channel level and changes scale all channels proportionally.
-- Applies the controller's power limit to manual channel changes, total
-  brightness, and spectra, so the application does not send an over-limit
-  channel set.
+  channel level and changes scale all channels proportionally. The interface
+  distinguishes sending from confirmation by the light; if levels are not
+  confirmed, it reports an error and refreshes the actual values.
 - Adapts the channel-slider layout for controllers with 6 to 14 channels while
-  keeping all channels visible in no more than two rows.
+  choosing the number of columns and rows for screen width and text size.
 - Displays channel wavelengths and controller-reported colors. A channel card
   provides its full name, wavelength, level, and PPFD contribution at all three
   displayed heights; the level can be edited to hundredths of a percent in
@@ -175,7 +172,7 @@ about a light problem. To create it:
 4. When needed, enter the PPFD@25 and DLI values shown in the light's built-in
    web interface. These fields are optional: leave them empty if the readings
    are not shown or were not recorded.
-5. Tap Create report, then use the Android system sheet to save or send the
+5. Tap Create, then use the Android system sheet to save or send the
    JSON file together with a problem description and the Android device model.
 6. Preferably send two reports with different channel levels—for example, one
    in automatic mode and one in manual mode.
@@ -207,8 +204,8 @@ application at your own risk.
 
 ## Local operation
 
-The application communicates directly with the light controller through its
-REST API on the local network. No cloud account or external service is
+The application communicates directly with the light controller on the local
+network. No cloud account or external service is
 required for operation. The controller's built-in web interface opens in the
 device browser from a link in the app when requested. Only update checks
 contact GitHub Releases.
